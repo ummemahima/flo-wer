@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.banner{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(images/Flower1.webp);
+    background-position: center;
+    background-size: cover;
+}
+.naver{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 90px;
+    cursor: pointer;
+}
+.naver ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.naver ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+
+}
+.naver ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background-image: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.naver ul li:hover::after{
+    width:100%;
+}
+.content{
+    width:100%;
+    position: absolute;
+    top:50%;
+    transform: rotateZ(-50%);
+    text-align: center;
+    color: #fff;
+}
+.content h1{
+    font-size: 70px;
+    margin-top: 30px;
+
+}
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+button{
+    width:200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent;
+    color:palevioletred;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+span{
+    background: #009688;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left:0;
+    bottom: 0;
+    z-index: -1;
+    transition:0.5s;
+
+}
+button:hover span{
+    width: 100%;
+}
+button:hover{
+    border: none;
+}
+h1{
+    font-size: 50px;
+    color:palevioletred;
+}
+h2{
+    font-size: 40px;
+    color:palevioletred;
+}
+.name-color{
+    color:palevioletred;
+
+}
+.half-width{
+    width: 40%;
+    float: left;
+    margin-left: 5%;
+    padding-left: 2%;
+}
+.half-width img{
+    width:40%;
+}
+.top-banner{
+  background-repeat: no-repeat;
+    background-image:url("images/bg1.webp");
+}
+section{
+    height: 500px;
+    padding-bottom: 150px;
+}
+.link-button{
+    text-decoration: none;
+    background-image: linear-gradient(45deg,lightsalmon,tomato);
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    font-weight: 700;
+}
+.dream-area{
+    background-image: url("images/bg4.jpg");
+    background-repeat: no-repeat;
+    background-position:right;
+}
+.single-flower{
+    box-shadow:10px 10px 40px powderblue ;
+    border-radius: 5px;
+    height: 55%;
+}
+.flower-area{
+    background-image: url(images/bgg2.jpg);
+   background-position: left;
+   padding-top:5ch;
+   background-color: white;
+    
+}
+#full-stack{
+    border-left: 7px solid;
+     border-image: linear-gradient(180deg,purple,tomato);
+     border-image-slice: 1;
+
+}
+#baby-w{
+    border-left: 7px solid;
+    border-image: linear-gradient(180deg,purple,lightsalmon);
+    border-image-slice: 1;
+
+}
+footer p{
+    text-align: center;
+    color:tomato;
+}
+.half-width p{
+    font-size: 25px;
+    color:darkred;
+}
+
+
